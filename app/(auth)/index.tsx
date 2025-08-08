@@ -6,20 +6,20 @@ import { View } from 'react-native';
 const { width, height } = Dimensions.get('window');
 export default function Home() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <ImageBackground
-        source={background}
-        style={{
-          flex: 1,
-          width: width,
-          height: height,
-        }}
-        resizeMode="cover" // This will scale properly to any phone
-      >
-        <View className="flex-1 ">
+    <ImageBackground
+      source={background}
+      style={{
+        flex: 1,
+        width: width,
+        height: height,
+      }}
+      resizeMode="cover" // This will scale properly to any phone
+    >
+      <SafeAreaView style={{ flex: 1 }}>
+        <View className="flex-1 justify-start px-8 pt-36">
           <Text className="text-6xl font-bold text-white">Start Planning Now!</Text>
         </View>
-      </ImageBackground>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ImageBackground>
   );
 }
