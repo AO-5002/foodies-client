@@ -2,6 +2,8 @@ import { ImageBackground, Dimensions, Text } from 'react-native';
 const background = require('assets/images/imageBackground.png');
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View } from 'react-native';
+import firebase from '~/utils/firebase';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const { width, height } = Dimensions.get('window');
 export default function Home() {
